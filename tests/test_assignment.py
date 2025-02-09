@@ -6,7 +6,7 @@ def test_should_pass():
     print("This will always pass!")
     assert True
 
-def test_parse_packaging():    
+def test_parse_packaging():
     # tests the package parser
     tests = [
         ("12 eggs in 1 carton", [{ 'eggs' : 12}, {'carton' : 1}]),

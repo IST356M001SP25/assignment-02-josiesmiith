@@ -1,7 +1,7 @@
 # Reflection
 
-Student Name:  name
-Sudent Email:  email
+Student Name:  Josie Smith
+Sudent Email:  jsmit194@syr.edu
 
 ## Instructions
 
@@ -23,3 +23,4 @@ Examples:
 
 `--- Reflection Below This Line ---`
 
+I struggled a lot with this assignment. I was able to get pretty far on the parse_packaging function, but needed to use the solution folder for most of the rest of the assignment. Additionally, the tests disappeared from the Menu / View / Testing section of VS Code about halfway through the assignment. I struggled remembering the syntax for reading files line by line. I am unsure about indexing after using the .split() function. For example, I'm not sure what the index refers to in int(item.split()[0]). I referenced previous code challenges to properly add dictionaries to a list. I do not know what the .values() function does or where it came from. There tend to be a lot of functions like that (for example .keys()) that seem to be useful but I don't know where to find them-they're not in the textbook or in my notes from lectures, but show up in solutions. I'm getting better at calling functions. Overall, I do not feel confident about parsing.

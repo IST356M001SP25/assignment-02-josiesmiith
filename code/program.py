@@ -31,12 +31,12 @@ import json
 from packaging import parse_packaging, calc_total_units, get_unit
 packages = []
 with open('data/packaging.txt') as f:
-    for line in f.readlines():
-        line = line.strip()
-        package = parse_packaging(line)
-        total_units = calc_total_units(package)
-        unit = get_unit(package)
+    for line in f.readlines(): # reading each item
+        line = line.strip() # removing all spacing
+        package = parse_packaging(line) # using parse function
+        total_units = calc_total_units(package) # using calc function
+        unit = get_unit(package) # using unit function
         print(f"{line} => total units: {total_units} {unit}")
-        packages.append(package)
-        with open('data/packaging.json', 'w') as f:
+        packages.append(package) # appending the package to the list
+        with open('data/packaging.json', 'w') as f: # writing the list to a json file
             json.dump(packages, f, indent=4)

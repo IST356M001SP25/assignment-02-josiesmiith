@@ -19,16 +19,13 @@ def parse_packaging(packaging_data: str) -> list[dict]:
     '''
     package = []
     for data in packaging_data.split(" / "):
-        item = data.split(" in ")[0]
-        quantity = int(item.split()[0]) # what does .split()[0] index refer to?
-        item = item.split()[1].strip()
-        package.append({item: quantity})
-
-    item = data.split(" in ")[-1]
+        data = data.strip()
+        items = data.split()
+        package.append({items[1]: int(items[0])})
+    item = data.split('in')[-1]
     quantity = int(item.split()[0])
     item = item.split()[1].strip()
     package.append({item: quantity})
-
     return package
 
 def calc_total_units(package: list[dict]) -> int:
